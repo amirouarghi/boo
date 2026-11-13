@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ilhem</title>
+<meta name="theme-color" content="#02040a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bg"></div>
+<div id="dim"></div>
+<canvas id="leaves" aria-hidden="true"></canvas>
+<div id="grain" aria-hidden="true"></div>
+<div id="cursor" aria-hidden="true"></div>
+
+<header class="chrome">
+  <nav id="progress" aria-label="Progress"></nav>
+  <button id="sound" class="mini" type="button" aria-pressed="false">sound off</button>
+</header>
+
+<main id="stage">
+  <section id="gate" class="scene on" aria-label="Start">
+    <div class="box">
+      <p class="line show small">a short film, made to be watched alone.</p>
+      <div class="row">
+        <button class="btn" id="beginSound" type="button">Begin with sound</button>
+        <button class="btn ghost" id="beginSilent" type="button">Begin in silence</button>
+      </div>
+    </div>
+  </section>
+  <section id="s1" class="scene" aria-live="polite"><div class="box"></div></section>
+  <section id="s2" class="scene" aria-live="polite"><div class="box"></div></section>
+  <section id="s3" class="scene" aria-live="polite"><div class="box"></div></section>
+  <section id="s4" class="scene"><div class="box wide"></div></section>
+  <section id="s5" class="scene" aria-live="polite"><div class="box"></div></section>
+  <section id="s6" class="scene" aria-live="polite"><div class="box"></div></section>
+  <section id="s7" class="scene" aria-live="polite"><div class="box"></div></section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
